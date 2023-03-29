@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "ddeb79d8-0501-47c1-9f63-6da3e11c922a",
+		"name": "ClienteApiReactiva",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "InsetarCliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"identificacion\": \"1234\",\r\n    \"nombre\": \"max\",\r\n    \"apellidos\": \"acevedo\",\r\n    \"paisResidencia\": \"CR\",\r\n    \"paisNacimiento\": \"Alemania\",\r\n    \"direccion\": \"wharewerland\",\r\n    \"telefono\": \"696969\",\r\n    \"estado\": \"false\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/api/cliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"api",
+						"cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "InsetarCliente2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2,\r\n    \"identificacion\": \"1234\",\r\n    \"nombre\": \"luis\",\r\n    \"apellidos\": \"gonzalez\",\r\n    \"paisResidencia\": \"CR\",\r\n    \"paisNacimiento\": \"Francia\",\r\n    \"direccion\": \"wharewerland\",\r\n    \"telefono\": \"696969\",\r\n    \"estado\": \"false\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/api/cliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"api",
+						"cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "consultarTodosClientes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/api/cliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"api",
+						"cliente"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
