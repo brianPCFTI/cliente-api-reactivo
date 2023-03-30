@@ -36,6 +36,46 @@
 			"response": []
 		},
 		{
+			"name": "InsetarClienteBraveToken",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJiR0l6V3RDcV96QXFOdE50SGhUVkJITFhOeGY5U2lzME5oNkFoc2lmd0JrIn0.eyJleHAiOjE2ODAyMTgyNzEsImlhdCI6MTY4MDIxNzk3MSwianRpIjoiNDNhNGY5NmUtYmVkZC00NjU4LThiYTQtZTYyNTRhNmQ4OWVmIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MjgwL3JlYWxtcy9zcHJpbmctY291cnNlIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6ImUzMDQyMWJmLTc2Y2ItNDVlZS1iNDJiLTQ2MjQ4NmJkMzQ0ZSIsInR5cCI6IkJlYXJlciIsImF6cCI6ImN1cnNvLWNsaWVudGUiLCJzZXNzaW9uX3N0YXRlIjoiZmFlODg3ZmItYWRmNy00YjA1LWFlMjMtMjY1ODkzZjkzMjNhIiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyIqIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwidXNlciIsImRlZmF1bHQtcm9sZXMtc3ByaW5nLWNvdXJzZSJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsInNpZCI6ImZhZTg4N2ZiLWFkZjctNGIwNS1hZTIzLTI2NTg5M2Y5MzIzYSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoidXNlciIsImdpdmVuX25hbWUiOiIiLCJmYW1pbHlfbmFtZSI6IiJ9.cYcEpvG-FfX8juPn71ooLdTPitCUACY0SX7d5rjAeYFOob5BKSQjmvd8nQQKQnQRnyTZ8n_V3oPNMA6zI4XNNkKCuHJ3mAJ9K1IzSWJjoHORdr58qp3YieA5yq4NIYo0_AKQhkyerImUEGkxz2FoJgqETH_qvmr3SezWA_tLS2vs9kYo5mZ8a4CoMP5u9ej5BW2ABwHbG4ubm9_CRopsLoOsOQjlXPlDo94uWONt3jws21IQapG8ws8l5PYjEo7_PMQZmsF4iJSuGBFtbFxACQ4R4nwPADxOU1LCFiu4MKVTkfg_dnyes9G2ovKeIrvvl6oB6szoMwmvRauFxAruHA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"identificacion\": \"1234\",\r\n    \"nombre\": \"max\",\r\n    \"apellidos\": \"acevedo\",\r\n    \"paisResidencia\": \"CR\",\r\n    \"paisNacimiento\": \"Alemania\",\r\n    \"direccion\": \"wharewerland\",\r\n    \"telefono\": \"696969\",\r\n    \"estado\": \"false\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/api/cliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"api",
+						"cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "InsetarCliente2",
 			"request": {
 				"method": "POST",
